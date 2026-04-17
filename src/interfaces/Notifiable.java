@@ -1,4 +1,6 @@
 package interfaces;
 
-public class Notifiable {
+public interface Notifiable {
+    void sendAlert(String message);
+    void sendNotification();
 }

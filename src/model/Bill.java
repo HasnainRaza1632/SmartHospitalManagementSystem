@@ -1,4 +1,23 @@
 package model;
 
-public class Bill {
+import interfaces.Billable;
+
+public class Bill implements Billable {
+
+    private String billId;
+    private double roomCharges;
+    private double medicineCharges;
+    private double consultationFee;
+    private boolean isPaid;
+
+    public Bill(String billId, double roomCharges, double medicineCharges,
+                double consultationFee) {}
+
+    public double calculateBill() {
+        return 0;
+    }
+
+    public void generateInvoice() {}
+
+    public void markAsPaid() {}
 }

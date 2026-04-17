@@ -1,4 +1,6 @@
 package interfaces;
 
-public class Schedulable {
+public interface Schedulable {
+    void scheduleAppointment();
+    void cancelAppointment();
 }

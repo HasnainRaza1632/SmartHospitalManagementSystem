@@ -1,4 +1,8 @@
 package interfaces;
 
-public class Billable {
+public interface Billable {
+
+    double calculateBill();
+    void generateInvoice();
+
 }
