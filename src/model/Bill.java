@@ -25,13 +25,11 @@ public class Bill implements Billable {
 
     public void generateInvoice() {
         System.out.println("===== Bill Reciept =====");
-        System.out.println("------------------------");
         System.out.println("  Bill ID : "+billId);
         System.out.println("  Room Charges : "+ roomCharges);
         System.out.println("  Medicine Charges : "+medicineCharges);
         System.out.println("  Consultaion Fee : "+consultationFee);
         System.out.println("  Total Bill : "+calculateBill());
-        //System.out.println("  Status : "+ isPaid);
     }
 
     public void markAsPaid() {
