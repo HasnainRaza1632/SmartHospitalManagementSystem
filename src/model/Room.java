@@ -4,7 +4,7 @@ public class Room {
 
     private String roomNumber;
     private String roomType;
-    private boolean isOccupied;
+    protected boolean isOccupied;
     private double dailyCharge;
 
     public Room(String roomNumber, String roomType, double dailyCharge) {
