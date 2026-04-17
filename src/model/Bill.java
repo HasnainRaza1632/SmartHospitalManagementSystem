@@ -14,7 +14,7 @@ public class Bill implements Billable {
                 double consultationFee) {}
 
     public double calculateBill() {
-        return 0;
+        return roomCharges + medicineCharges + consultationFee;
     }
 
     public void generateInvoice() {}

@@ -1,7 +1,10 @@
 package model;
 
 import interfaces.*;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.PriorityQueue;
+
 
 public class Doctor extends MedicalStaff implements Schedulable, Notifiable {
 
@@ -14,9 +17,13 @@ public class Doctor extends MedicalStaff implements Schedulable, Notifiable {
                   String staffId, String department, double salary, String shiftSchedule,
                   String specialization, String licenseNumber) {
         super(id, name, age, contactNumber, staffId, department, salary, shiftSchedule);
+        this.patients = new ArrayList<>();
+        this.appointments = new PriorityQueue<>();
+        this.specialization = specialization;
+        this.licenseNumber = licenseNumber;
     }
 
-    public void treat() {}
+    public void treat(Patient patient) {}
 
     public void scheduleAppointment() {}
 

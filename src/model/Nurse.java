@@ -15,7 +15,7 @@ public class Nurse extends MedicalStaff implements Notifiable {
         super(id, name, age, contactNumber, staffId, department, salary, shiftSchedule);
     }
 
-    public void treat() {}
+    public void treat(Patient patient) {}
 
     public void sendAlert(String message) {}
 
