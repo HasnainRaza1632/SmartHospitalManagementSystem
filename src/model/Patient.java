@@ -45,17 +45,17 @@ public class Patient extends Person {
 
     public void getDetails() {
         System.out.println("===== Patient Details =====");
-        System.out.println("Patient ID: " + patientId);
-        System.out.println("name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Diagnosis: " + diagnosis);
-        System.out.println("isEmergency: " + (isEmergency ? "Yes" : "No"));
-        System.out.println("Assigned Room: " + getAssignedRoom() );
-        System.out.println("Bill Amount: " + getBillAmount());
+        System.out.println("  Patient ID: " + patientId);
+        System.out.println("  name: " + name);
+        System.out.println("  Age: " + age);
+        System.out.println("  Diagnosis: " + diagnosis);
+        System.out.println("  isEmergency: " + (isEmergency ? "Yes" : "No"));
+        System.out.println("  Assigned Room: " + getAssignedRoom() );
+        System.out.println("  Bill Amount: " + getBillAmount());
     }
 
     public void admit() {
-        System.out.println("Patient " + patientId + " admitted successfully.");
+        System.out.println("  Patient " + patientId + " admitted successfully.");
     }
 
     public void discharge() {
@@ -63,6 +63,6 @@ public class Patient extends Person {
             assignedRoom.vacate();
             assignedRoom = null;
         }
-        System.out.println("Patient " + patientId + " discharged successfully.");
+        System.out.println("  Patient " + patientId + " discharged successfully.");
     }
 }
